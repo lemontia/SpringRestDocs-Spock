@@ -1,0 +1,78 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:site-url: /stock-memo/build/asciidoc/html5/
+
+
+
+= User API
+
+== link:../index.html[> 홈으로]
+
+//link:../api-list.html[API 목록으로]
+
+
+== 설명
+유저 정보 조회 API를 테스트 합니다.
+
+
+== 유저 정보 조회(GET)
+
+=== Request
+
+CURL:
+
+include::{snippets}/user/user-get/curl-request.adoc[]
+
+Request Parameters:
+
+include::{snippets}/user/user-get/request-parameters.adoc[]
+
+Request HTTP Example:
+
+include::{snippets}/user/user-get/http-request.adoc[]
+
+=== Response
+
+Response Fields:
+
+include::{snippets}/user/user-get/response-fields.adoc[]
+
+Response HTTP Example:
+
+include::{snippets}/user/user-get/http-response.adoc[]
+
+
+
+== 유저 정보 조회(POST)
+
+=== Body
+
+CURL:
+
+include::{snippets}/user/user-post/curl-request.adoc[]
+
+Request Parameters:
+
+include::{snippets}/user/user-post/request-fields.adoc[]
+include::{snippets}/user/user-post/request-body.adoc[]
+
+Request HTTP Example:
+
+include::{snippets}/user/user-post/http-request.adoc[]
+
+=== Response
+
+Response Fields:
+
+include::{snippets}/user/user-post/response-fields.adoc[]
+
+Response HTTP Example:
+
+include::{snippets}/user/user-post/http-response.adoc[]

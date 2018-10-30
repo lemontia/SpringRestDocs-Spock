@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+# Spring docs 설정하는데 사용.
+test.server.http.scheme: http
+test.server.http.host: test-server.com
+test.server.http.port: 8080
+
+
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  profiles: dev

@@ -1,0 +1,59 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:site-url: /stock-memo/build/asciidoc/html5/
+
+
+= Rest Docs Sample Document
+
+
+== 소개
+Rest Docs Sample Document
+
+== 공통
+=== Domain
+
+|===
+| 환경 | domain
+
+| 테스트서버
+| test-server.com:8080.com
+
+| 운영서버
+| live-server.com
+|===
+
+=== 공통 Response Body
+
+|===
+| field | 설명
+
+| `code`
+| 응답 코드
+
+| `message`
+| 응답 메세지
+
+| `data`
+| 실 데이터
+|===
+
+== 응답 코드 [link:code.html[바로가기]]
+//link:code.html[링크]
+
+//== API 목록
+//link:api-list.html[링크]
+
+
+== API 목록
+|===
+| API 주소 | 설명
+| link:user/index.html#_유저_정보_조회_get[/user-get]    | 유저정보 조회(GET)
+| link:user/index.html#_유저_정보_조회_post[/user-get]    | 유저정보 조회(POST)
+|===

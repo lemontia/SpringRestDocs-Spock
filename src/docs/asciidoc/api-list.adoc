@@ -1,0 +1,22 @@
+ifndef::snippets[]
+:snippets: ../../../build/generated-snippets
+endif::[]
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:site-url: /spring-docs/build/asciidoc/html5/
+
+
+
+= API 목록
+
+== link:../index.html[> 홈으로]
+
+|===
+| API 주소 | 설명
+| link:user/index.html[/hello]    | 유저정보 조회(GET)
+| link:user/index.html[/hello2]    | 유저정보 조회(POST)
+|===
