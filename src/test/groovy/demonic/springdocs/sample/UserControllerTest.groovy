@@ -75,9 +75,10 @@ class UserControllerTest extends Specification {
                 // 결과값에서 하나라도 빠지면 에러발생.
                 //      - null 로 리턴된다 하더라도 등록해두어야 함
                 //      - null 이 허용된다면 optional() 을 꼭 주어야 함.
+                //      - Spring Docs 에 설명을 나오지 않게 하려면 ignored() 추가
                 responseFields(
-                        fieldWithPath("code").type(JsonFieldType.STRING).description("이름"),
-                        fieldWithPath("message").type(JsonFieldType.STRING).description("메세지"),
+                        fieldWithPath("code").type(JsonFieldType.STRING).description("코드").ignored(),
+                        fieldWithPath("message").type(JsonFieldType.STRING).description("메세지").ignored(),
                         // data 오브젝트 안의 데이터
                         fieldWithPath("data.name").type(JsonFieldType.STRING).description("유저 명"),
                         fieldWithPath("data.age").type(JsonFieldType.NUMBER).description("나이").optional(),
@@ -131,9 +132,10 @@ class UserControllerTest extends Specification {
                 // 결과값에서 하나라도 빠지면 에러발생.
                 //      - null 로 리턴된다 하더라도 등록해두어야 함
                 //      - null 이 허용된다면 optional() 을 꼭 주어야 함.
+                //      - Spring Docs 에 설명을 나오지 않게 하려면 ignored() 추가
                 responseFields(
-                        fieldWithPath("code").type(JsonFieldType.STRING).description("이름"),
-                        fieldWithPath("message").type(JsonFieldType.STRING).description("메세지"),
+                        fieldWithPath("code").type(JsonFieldType.STRING).description("코드").ignore(),
+                        fieldWithPath("message").type(JsonFieldType.STRING).description("메세지").ignore(),
                         // data 오브젝트 안의 데이터
                         fieldWithPath("data.name").type(JsonFieldType.STRING).description("유저 명"),
                         fieldWithPath("data.age").type(JsonFieldType.NUMBER).description("나이").optional(),
